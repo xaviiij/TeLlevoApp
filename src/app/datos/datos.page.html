@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Datos</ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <br>
+
+  <ion-list>
+    <ion-item>
+      <ion-input label="Nombre:" placeholder="Nombre Apellido"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-input label="Correo Electronico" placeholder="UsuarioEj@gmail.com"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-input label="Dirrecion" placeholder="Antonio Varas 666"></ion-input>
+    </ion-item>
+    <br>
+    <ion-item>
+      <ion-input label="Numero" placeholder="997155569"></ion-input>
+    </ion-item>
+    <br>
+    
+      <ion-select label="Nivel Educacional" interface="action-sheet" placeholder="Seleccione Opcion" slot="center">
+        <ion-select-option value="Basica">Efectivo</ion-select-option>
+        <ion-select-option value="Media">Debito</ion-select-option>
+        <ion-select-option value="Profesional">Credito</ion-select-option>
+      </ion-select>
+    
+  </ion-list>
+<br>
+  <ion-button fill="outline">Guardar</ion-button>
+
+</ion-header>

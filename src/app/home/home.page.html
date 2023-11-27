@@ -1,0 +1,89 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+     TeLlevoApp
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+  <div id="container">
+    <ion-avatar id="avatar" #avatar>
+      <img alt="Silhouette of a person's head"
+        src="data:image/png;base64,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" />
+    </ion-avatar>
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>Iniciar Sesion</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        <ion-list>
+
+          <ion-item>
+            <ion-input [(ngModel)]="user.usuario" label="Nombre Usuario" labelPlacement="floating"
+              placeholder="Ingrese su Usuario"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input [(ngModel)]="user.password" label="Contraseña" type="password" labelPlacement="floating"
+              placeholder="Ingrese su Contraseña">
+            </ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-toggle aria-label="Success toggle" color="success" [checked]="true">Recuerdame</ion-toggle>
+          </ion-item><br>
+          <ion-item>
+            <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+          </ion-item>
+          <ion-button (click)="enviarInformacion()" size="small" shape="round">Conectar</ion-button><br>
+          <br>
+          <ion-button id="open-modal" shape="round" size="small">
+            Registrarse
+          </ion-button><br>
+          
+          
+          <div>
+
+            <h1>{{mensaje}}</h1><br>
+          </div>
+        </ion-list>
+      </ion-card-content>
+    </ion-card>
+
+
+    <ion-alert trigger="present-alert" header="Registro" subHeader="{{mensaje}}" [buttons]="alertButtons"></ion-alert>
+    
+    <ion-modal trigger="open-modal">
+      <ng-template>
+        <ion-header>
+          <ion-toolbar>
+            <ion-buttons slot="start">
+              <ion-button (click)="cancel()">Salir</ion-button>
+            </ion-buttons>
+            <ion-title>Registro</ion-title>
+            <ion-buttons slot="end" id="present-alert">
+              <ion-button (click)="confirm()" [strong]="true">Confirmar</ion-button>
+            </ion-buttons>
+          </ion-toolbar>
+        </ion-header>
+        <ion-content class="ion-padding">
+          <ion-item>
+            <ion-input [(ngModel)]="user.usuario" label="Nombre Usuario" labelPlacement="floating"
+              placeholder="Ingrese su Usuario"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-input [(ngModel)]="user.password" label="Contraseña" type="password" labelPlacement="floating"
+              placeholder="Ingrese su Contraseña"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>{{estado}}</ion-label>
+          </ion-item>
+        </ion-content>
+      </ng-template>
+    </ion-modal>
+    
+
+
+  </div>
+</ion-content>

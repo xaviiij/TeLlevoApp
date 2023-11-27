@@ -1,0 +1,62 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Agregar</ion-title>
+    <ion-buttons slot="end">
+      <ion-back-button text="Atras"></ion-back-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+<br>
+
+<ion-content>
+  <form>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Nombre</ion-label>
+      <ion-input type="text" name="nombre" [(ngModel)]="newAuto.nombre" required></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Rut (con guión)</ion-label>
+      <ion-input type="text" name="rut" [(ngModel)]="newAuto.rut"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Patente</ion-label>
+      <ion-input type="text" name="patente" [(ngModel)]="newAuto.patente"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Capacidad</ion-label>
+      <ion-input type="number" name="capacidad" [(ngModel)]="newAuto.capacidad"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Método de Pago</ion-label>
+      <ion-input type="text" name="metodoPago" [(ngModel)]="newAuto.metodo_de_pago"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Comuna</ion-label>
+      <ion-input type="text" name="comuna" [(ngModel)]="newAuto.comuna"></ion-input>
+    </ion-item>
+
+    <ion-item lines="full">
+      <ion-label position="floating">Precio</ion-label>
+      <ion-input type="number" name="precio" [(ngModel)]="newAuto.precio"></ion-input>
+    </ion-item>
+    <br>
+    <ion-row>
+      <ion-col>
+       <ion-button (click)="crearAuto()" expand="block" color="success">Agregar</ion-button>
+      </ion-col>
+    </ion-row>
+
+
+  </form>
+</ion-content>
+
+
